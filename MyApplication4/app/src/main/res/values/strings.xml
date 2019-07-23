@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="txtCauHoi">Hobby</string>
+    <string name="cbTheThao">Sport</string>
+    <string name="cbDuLich">tourism</string>
+    <string name="cbGame">Game</string>
+</resources>

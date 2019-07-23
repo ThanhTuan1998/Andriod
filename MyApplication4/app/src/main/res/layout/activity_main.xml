@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    >
+    <!--Lý Nguyễn Thanh Tuấn\n Bá Đúc \n Minh Đúc-->
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            />
+        <EditText
+            android:id="@+id/etName"
+            android:text="User"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="11"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            />
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+    <TableRow>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="18dp"
+        android:text="Gender"
+        />
+    <RadioGroup android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male"
+            android:id="@+id/radNam"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female"
+            android:id="@+id/radNu"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male or female"
+            android:id="@+id/radGTK"
+            android:checked="false" />
+
+
+    </RadioGroup>
+    </TableRow>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtCauHoi"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
+            />
+        <CheckBox
+            android:id="@+id/cbTheThao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cbTheThao"
+            />
+        <CheckBox
+            android:id="@+id/cbDuLich"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cbDuLich"
+            />
+        <CheckBox
+            android:id="@+id/cbGame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cbGame"
+            />
+    <Spinner
+        android:id="@+id/spinner_countries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        />
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lstPerson"
+        >
+    </ListView>
+</TableLayout>
